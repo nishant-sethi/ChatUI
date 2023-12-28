@@ -1,7 +1,7 @@
 # ChatUI
 
 ## Introduction
-modern chat user interface component built using SwiftUI for iOS applications.
+Modern chat user interface component built using SwiftUI for iOS applications.
 
 ## Features
 - **SwiftUI Implementation**: Fully built with SwiftUI for seamless integration into iOS projects.
