@@ -46,4 +46,4 @@ People *love* thorough bug reports.
 By contributing, you agree that your contributions will be licensed under its [MIT License].
 
 ## References
-This document was adapted from the open-source contribution guidelines for [Github's guidelines]([https://github.com/facebook/draft-js/blob/master/CONTRIBUTING.md](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+This document was adapted from the open-source contribution guidelines for [Github's guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
