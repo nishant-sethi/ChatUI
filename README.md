@@ -5,7 +5,7 @@ I love coffee, it helps my creative juices running.
 # ChatUI
 
 ## Introduction
-Modern chat user interface component built using SwiftUI for iOS applications.
+Modern Chat User Interface Component built using SwiftUI for iOS applications.
 
 ## Features
 - **SwiftUI Implementation**: Fully built with SwiftUI for seamless integration into iOS projects.
