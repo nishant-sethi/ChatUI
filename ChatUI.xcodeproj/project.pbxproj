@@ -3,10 +3,68 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71747E12BA1E45400BDC6C6 /* APITokenSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71747E02BA1E45400BDC6C6 /* APITokenSetup.swift */; };
+		F71747E32BA1E7A300BDC6C6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71747E22BA1E7A300BDC6C6 /* SafariView.swift */; };
+		F71C53CD2B60F54700BF2B70 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53CC2B60F54700BF2B70 /* Chat.swift */; };
+		F71C53CF2B60FA7200BF2B70 /* ChatFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53CE2B60FA7200BF2B70 /* ChatFooter.swift */; };
+		F71C53D12B61670200BF2B70 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D02B61670200BF2B70 /* Main.swift */; };
+		F71C53D42B61683500BF2B70 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D32B61683500BF2B70 /* MainHeader.swift */; };
+		F71C53D62B61686400BF2B70 /* ChatHistorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */; };
+		F71C53D82B61686E00BF2B70 /* ExploreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D72B61686E00BF2B70 /* ExploreSection.swift */; };
+		F71C53DA2B61687B00BF2B70 /* PromptLibrarySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */; };
+		F71C53DC2B616DD700BF2B70 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */; };
+		F71C53DE2B616FF600BF2B70 /* ChatHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */; };
+		F71C53E02B6183E000BF2B70 /* PromptLibraryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DF2B6183E000BF2B70 /* PromptLibraryItem.swift */; };
+		F71C53E22B62D00900BF2B70 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E12B62D00900BF2B70 /* Explore.swift */; };
+		F71C53E42B62D2F600BF2B70 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E32B62D2F600BF2B70 /* ExploreView.swift */; };
+		F71C53E62B62D5A500BF2B70 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E52B62D5A500BF2B70 /* History.swift */; };
+		F71C53E82B62E18600BF2B70 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E72B62E18600BF2B70 /* HistoryView.swift */; };
+		F71C53EA2B63800A00BF2B70 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E92B63800A00BF2B70 /* Prompt.swift */; };
+		F71C53EE2B638B3400BF2B70 /* PromptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53ED2B638B3400BF2B70 /* PromptsView.swift */; };
+		F71C53F22B64E9E600BF2B70 /* NewChatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */; };
+		F71C53F42B65592700BF2B70 /* ChatBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F32B65592700BF2B70 /* ChatBody.swift */; };
+		F71C53F62B65671E00BF2B70 /* SectionNavigationArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */; };
+		F71C53F82B662FCE00BF2B70 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F72B662FCE00BF2B70 /* Message.swift */; };
+		F71C53FA2B66321000BF2B70 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F92B66321000BF2B70 /* ChatMessageView.swift */; };
+		F71C53FC2B667A1100BF2B70 /* PromptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53FB2B667A1100BF2B70 /* PromptViewModel.swift */; };
+		F71C54002B68C27600BF2B70 /* PromptModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53FF2B68C27600BF2B70 /* PromptModelData.swift */; };
+		F71C54032B696B9D00BF2B70 /* prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = F71C54022B696B9D00BF2B70 /* prompts.json */; };
+		F71C54052B69785900BF2B70 /* PromptBGGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54042B69785900BF2B70 /* PromptBGGradient.swift */; };
+		F71C54072B69949200BF2B70 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54062B69949200BF2B70 /* FavoriteButton.swift */; };
+		F71C54092B699A7500BF2B70 /* PromptCategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54082B699A7500BF2B70 /* PromptCategoryHome.swift */; };
+		F71C540B2B699D0C00BF2B70 /* PromptCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C540A2B699D0C00BF2B70 /* PromptCategoryRow.swift */; };
+		F71C540D2B699E8E00BF2B70 /* PromptCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C540C2B699E8E00BF2B70 /* PromptCategoryItem.swift */; };
+		F71C54102B6A514C00BF2B70 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C540F2B6A514C00BF2B70 /* PageViewController.swift */; };
+		F71C54122B6A5FEA00BF2B70 /* FeaturedPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54112B6A5FEA00BF2B70 /* FeaturedPrompt.swift */; };
+		F71C54142B6A61C100BF2B70 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54132B6A61C100BF2B70 /* PageView.swift */; };
+		F71C54162B6A655700BF2B70 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54152B6A655700BF2B70 /* PageControl.swift */; };
+		F71C54182B6A782900BF2B70 /* PromptFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C54172B6A782900BF2B70 /* PromptFilter.swift */; };
+		F721A97B2B4F5FA500E3DF4D /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721A97A2B4F5FA500E3DF4D /* Onboarding.swift */; };
+		F721A9FF2B4F613B00E3DF4D /* Satoshi-VariableItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F721A97F2B4F608D00E3DF4D /* Satoshi-VariableItalic.ttf */; };
+		F721AA002B4F614100E3DF4D /* Satoshi-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9802B4F608D00E3DF4D /* Satoshi-Variable.ttf */; };
+		F721AA012B4F615000E3DF4D /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9B72B4F608D00E3DF4D /* Satoshi-Bold.otf */; };
+		F721AA022B4F615B00E3DF4D /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9C02B4F608D00E3DF4D /* Satoshi-Medium.otf */; };
+		F721AA032B4F615D00E3DF4D /* Satoshi-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BF2B4F608D00E3DF4D /* Satoshi-MediumItalic.otf */; };
+		F721AA042B4F615F00E3DF4D /* Satoshi-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BE2B4F608D00E3DF4D /* Satoshi-BlackItalic.otf */; };
+		F721AA052B4F616300E3DF4D /* Satoshi-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BD2B4F608D00E3DF4D /* Satoshi-LightItalic.otf */; };
+		F721AA062B4F616500E3DF4D /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BC2B4F608D00E3DF4D /* Satoshi-Light.otf */; };
+		F721AA072B4F616800E3DF4D /* Satoshi-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BB2B4F608D00E3DF4D /* Satoshi-BoldItalic.otf */; };
+		F721AA082B4F616A00E3DF4D /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9BA2B4F608D00E3DF4D /* Satoshi-Regular.otf */; };
+		F721AA092B4F616D00E3DF4D /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9B92B4F608D00E3DF4D /* Satoshi-Black.otf */; };
+		F721AA0A2B4F616F00E3DF4D /* Satoshi-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F721A9B82B4F608D00E3DF4D /* Satoshi-Italic.otf */; };
+		F721AA0D2B4F70F100E3DF4D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721AA0C2B4F70F100E3DF4D /* Login.swift */; };
+		F7304F092B94F22D002FE1C8 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7304F082B94F22D002FE1C8 /* HistoryViewModel.swift */; };
+		F73CCFA52B5A781400E6F7EB /* FeaturedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFA42B5A781400E6F7EB /* FeaturedCard.swift */; };
+		F73CCFA72B5A78D300E6F7EB /* OnboardingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFA62B5A78D300E6F7EB /* OnboardingHeader.swift */; };
+		F73CCFA92B5A7A4600E6F7EB /* OnboardingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFA82B5A7A4500E6F7EB /* OnboardingFooter.swift */; };
+		F73CCFAC2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAB2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift */; };
+		F73CCFAE2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */; };
+		F73CCFB02B5A7B5200E6F7EB /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */; };
+		F77B36742B793E1E00821A17 /* AIAndHumanCoexistenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */; };
 		F78FB9CC2B21FF3C00AEF056 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78FB9CB2B21FF3C00AEF056 /* MessageView.swift */; };
 		F78FB9CE2B22001E00AEF056 /* ChatScreenFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78FB9CD2B22001E00AEF056 /* ChatScreenFooter.swift */; };
 		F78FB9D02B22010700AEF056 /* ChatScreenBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78FB9CF2B22010700AEF056 /* ChatScreenBody.swift */; };
@@ -14,8 +72,6 @@
 		F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79696DF2B25DBF8005BA8D0 /* Conversations.swift */; };
 		F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */; };
 		F79DB20B2B16B8F200E53A75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB20A2B16B8F200E53A75 /* ContentView.swift */; };
-		F79DB20D2B16B8F300E53A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DB20C2B16B8F300E53A75 /* Assets.xcassets */; };
-		F79DB2102B16B8F300E53A75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DB20F2B16B8F300E53A75 /* Preview Assets.xcassets */; };
 		F79DB21A2B16B8F300E53A75 /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2192B16B8F300E53A75 /* ChatUITests.swift */; };
 		F79DB2242B16B8F300E53A75 /* ChatUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2232B16B8F300E53A75 /* ChatUIUITests.swift */; };
 		F79DB2262B16B8F300E53A75 /* ChatUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2252B16B8F300E53A75 /* ChatUIUITestsLaunchTests.swift */; };
@@ -53,6 +109,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F71747E02BA1E45400BDC6C6 /* APITokenSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenSetup.swift; sourceTree = "<group>"; };
+		F71747E22BA1E7A300BDC6C6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F71C53CC2B60F54700BF2B70 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F71C53CE2B60FA7200BF2B70 /* ChatFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFooter.swift; sourceTree = "<group>"; };
+		F71C53D02B61670200BF2B70 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		F71C53D32B61683500BF2B70 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistorySection.swift; sourceTree = "<group>"; };
+		F71C53D72B61686E00BF2B70 /* ExploreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSection.swift; sourceTree = "<group>"; };
+		F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibrarySection.swift; sourceTree = "<group>"; };
+		F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryItem.swift; sourceTree = "<group>"; };
+		F71C53DF2B6183E000BF2B70 /* PromptLibraryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibraryItem.swift; sourceTree = "<group>"; };
+		F71C53E12B62D00900BF2B70 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		F71C53E32B62D2F600BF2B70 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		F71C53E52B62D5A500BF2B70 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F71C53E72B62E18600BF2B70 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		F71C53E92B63800A00BF2B70 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		F71C53ED2B638B3400BF2B70 /* PromptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsView.swift; sourceTree = "<group>"; };
+		F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatSection.swift; sourceTree = "<group>"; };
+		F71C53F32B65592700BF2B70 /* ChatBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBody.swift; sourceTree = "<group>"; };
+		F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionNavigationArrow.swift; sourceTree = "<group>"; };
+		F71C53F72B662FCE00BF2B70 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F71C53F92B66321000BF2B70 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		F71C53FB2B667A1100BF2B70 /* PromptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptViewModel.swift; sourceTree = "<group>"; };
+		F71C53FF2B68C27600BF2B70 /* PromptModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptModelData.swift; sourceTree = "<group>"; };
+		F71C54022B696B9D00BF2B70 /* prompts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prompts.json; sourceTree = "<group>"; };
+		F71C54042B69785900BF2B70 /* PromptBGGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBGGradient.swift; sourceTree = "<group>"; };
+		F71C54062B69949200BF2B70 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		F71C54082B699A7500BF2B70 /* PromptCategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCategoryHome.swift; sourceTree = "<group>"; };
+		F71C540A2B699D0C00BF2B70 /* PromptCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCategoryRow.swift; sourceTree = "<group>"; };
+		F71C540C2B699E8E00BF2B70 /* PromptCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCategoryItem.swift; sourceTree = "<group>"; };
+		F71C540F2B6A514C00BF2B70 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F71C54112B6A5FEA00BF2B70 /* FeaturedPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPrompt.swift; sourceTree = "<group>"; };
+		F71C54132B6A61C100BF2B70 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		F71C54152B6A655700BF2B70 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		F71C54172B6A782900BF2B70 /* PromptFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptFilter.swift; sourceTree = "<group>"; };
+		F721A97A2B4F5FA500E3DF4D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		F721A97F2B4F608D00E3DF4D /* Satoshi-VariableItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-VariableItalic.ttf"; sourceTree = "<group>"; };
+		F721A9802B4F608D00E3DF4D /* Satoshi-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Variable.ttf"; sourceTree = "<group>"; };
+		F721A9B72B4F608D00E3DF4D /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		F721A9B82B4F608D00E3DF4D /* Satoshi-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.otf"; sourceTree = "<group>"; };
+		F721A9B92B4F608D00E3DF4D /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		F721A9BA2B4F608D00E3DF4D /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		F721A9BB2B4F608D00E3DF4D /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
+		F721A9BC2B4F608D00E3DF4D /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
+		F721A9BD2B4F608D00E3DF4D /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
+		F721A9BE2B4F608D00E3DF4D /* Satoshi-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.otf"; sourceTree = "<group>"; };
+		F721A9BF2B4F608D00E3DF4D /* Satoshi-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.otf"; sourceTree = "<group>"; };
+		F721A9C02B4F608D00E3DF4D /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		F721AA0B2B4F620C00E3DF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F721AA0C2B4F70F100E3DF4D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F7304F082B94F22D002FE1C8 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		F73CCFA42B5A781400E6F7EB /* FeaturedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCard.swift; sourceTree = "<group>"; };
+		F73CCFA62B5A78D300E6F7EB /* OnboardingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeader.swift; sourceTree = "<group>"; };
+		F73CCFA82B5A7A4500E6F7EB /* OnboardingFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFooter.swift; sourceTree = "<group>"; };
+		F73CCFAB2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAndHumanCoexistenceView.swift; sourceTree = "<group>"; };
 		F78FB9CB2B21FF3C00AEF056 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		F78FB9CD2B22001E00AEF056 /* ChatScreenFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenFooter.swift; sourceTree = "<group>"; };
 		F78FB9CF2B22010700AEF056 /* ChatScreenBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenBody.swift; sourceTree = "<group>"; };
@@ -109,10 +224,170 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71C53CB2B60F53A00BF2B70 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F71C53CC2B60F54700BF2B70 /* Chat.swift */,
+				F71C53CE2B60FA7200BF2B70 /* ChatFooter.swift */,
+				F71C53F32B65592700BF2B70 /* ChatBody.swift */,
+				F71C53F92B66321000BF2B70 /* ChatMessageView.swift */,
+				F71C53FB2B667A1100BF2B70 /* PromptViewModel.swift */,
+				F7304F082B94F22D002FE1C8 /* HistoryViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F71C53D22B61681E00BF2B70 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F71C53D02B61670200BF2B70 /* Main.swift */,
+				F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */,
+				F71C53D32B61683500BF2B70 /* MainHeader.swift */,
+				F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */,
+				F71C53D72B61686E00BF2B70 /* ExploreSection.swift */,
+				F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */,
+				F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */,
+				F71C53E32B62D2F600BF2B70 /* ExploreView.swift */,
+				F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */,
+				F71C53E72B62E18600BF2B70 /* HistoryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F71C53FD2B676E2F00BF2B70 /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				F71C53FE2B676F1700BF2B70 /* Model */,
+				F71C53ED2B638B3400BF2B70 /* PromptsView.swift */,
+				F71C54082B699A7500BF2B70 /* PromptCategoryHome.swift */,
+				F71C540A2B699D0C00BF2B70 /* PromptCategoryRow.swift */,
+				F71C540C2B699E8E00BF2B70 /* PromptCategoryItem.swift */,
+				F71C53DF2B6183E000BF2B70 /* PromptLibraryItem.swift */,
+				F71C54042B69785900BF2B70 /* PromptBGGradient.swift */,
+				F71C54112B6A5FEA00BF2B70 /* FeaturedPrompt.swift */,
+				F71C54172B6A782900BF2B70 /* PromptFilter.swift */,
+			);
+			path = Prompt;
+			sourceTree = "<group>";
+		};
+		F71C53FE2B676F1700BF2B70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F71C53E92B63800A00BF2B70 /* Prompt.swift */,
+				F71C53FF2B68C27600BF2B70 /* PromptModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F71C54012B68C2B300BF2B70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F71C54022B696B9D00BF2B70 /* prompts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F71C540E2B6A512E00BF2B70 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				F71C540F2B6A514C00BF2B70 /* PageViewController.swift */,
+				F71C54132B6A61C100BF2B70 /* PageView.swift */,
+				F71C54152B6A655700BF2B70 /* PageControl.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		F721A9782B4F5F8B00E3DF4D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F71C540E2B6A512E00BF2B70 /* PageView */,
+				F71C54012B68C2B300BF2B70 /* Resources */,
+				F71C53FD2B676E2F00BF2B70 /* Prompt */,
+				F71C53D22B61681E00BF2B70 /* Home */,
+				F71C53CB2B60F53A00BF2B70 /* Chat */,
+				F73CCFAA2B5A7AAF00E6F7EB /* Helpers */,
+				F721A9792B4F5F9400E3DF4D /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F721A9792B4F5F9400E3DF4D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F721A97A2B4F5FA500E3DF4D /* Onboarding.swift */,
+				F721AA0C2B4F70F100E3DF4D /* Login.swift */,
+				F73CCFA42B5A781400E6F7EB /* FeaturedCard.swift */,
+				F73CCFA62B5A78D300E6F7EB /* OnboardingHeader.swift */,
+				F73CCFA82B5A7A4500E6F7EB /* OnboardingFooter.swift */,
+				F71747E02BA1E45400BDC6C6 /* APITokenSetup.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F721A97C2B4F607C00E3DF4D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F721A97D2B4F608D00E3DF4D /* Fonts */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F721A97D2B4F608D00E3DF4D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F721A97E2B4F608D00E3DF4D /* Variable */,
+				F721A9B62B4F608D00E3DF4D /* OTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F721A97E2B4F608D00E3DF4D /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				F721A97F2B4F608D00E3DF4D /* Satoshi-VariableItalic.ttf */,
+				F721A9802B4F608D00E3DF4D /* Satoshi-Variable.ttf */,
+			);
+			path = Variable;
+			sourceTree = "<group>";
+		};
+		F721A9B62B4F608D00E3DF4D /* OTF */ = {
+			isa = PBXGroup;
+			children = (
+				F721A9B72B4F608D00E3DF4D /* Satoshi-Bold.otf */,
+				F721A9B82B4F608D00E3DF4D /* Satoshi-Italic.otf */,
+				F721A9B92B4F608D00E3DF4D /* Satoshi-Black.otf */,
+				F721A9BA2B4F608D00E3DF4D /* Satoshi-Regular.otf */,
+				F721A9BB2B4F608D00E3DF4D /* Satoshi-BoldItalic.otf */,
+				F721A9BC2B4F608D00E3DF4D /* Satoshi-Light.otf */,
+				F721A9BD2B4F608D00E3DF4D /* Satoshi-LightItalic.otf */,
+				F721A9BE2B4F608D00E3DF4D /* Satoshi-BlackItalic.otf */,
+				F721A9BF2B4F608D00E3DF4D /* Satoshi-MediumItalic.otf */,
+				F721A9C02B4F608D00E3DF4D /* Satoshi-Medium.otf */,
+			);
+			path = OTF;
+			sourceTree = "<group>";
+		};
+		F73CCFAA2B5A7AAF00E6F7EB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F73CCFAB2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift */,
+				F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */,
+				F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */,
+				F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */,
+				F71C54062B69949200BF2B70 /* FavoriteButton.swift */,
+				F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */,
+				F71747E22BA1E7A300BDC6C6 /* SafariView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F78FFE6B2B20BD4600E9FAFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F79696DF2B25DBF8005BA8D0 /* Conversations.swift */,
+				F71C53F72B662FCE00BF2B70 /* Message.swift */,
+				F71C53E12B62D00900BF2B70 /* Explore.swift */,
+				F71C53E52B62D5A500BF2B70 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +403,7 @@
 		F79DB1FC2B16B8F200E53A75 = {
 			isa = PBXGroup;
 			children = (
+				F721A97C2B4F607C00E3DF4D /* Shared */,
 				F79DB2072B16B8F200E53A75 /* ChatUI */,
 				F79DB2182B16B8F300E53A75 /* ChatUITests */,
 				F79DB2222B16B8F300E53A75 /* ChatUIUITests */,
@@ -148,6 +424,8 @@
 		F79DB2072B16B8F200E53A75 /* ChatUI */ = {
 			isa = PBXGroup;
 			children = (
+				F721AA0B2B4F620C00E3DF4D /* Info.plist */,
+				F721A9782B4F5F8B00E3DF4D /* Modules */,
 				F78FFE6E2B20BF5300E9FAFA /* ViewModels */,
 				F78FFE6B2B20BD4600E9FAFA /* Models */,
 				F79DB2322B16B92900E53A75 /* Views */,
@@ -256,6 +534,8 @@
 			dependencies = (
 			);
 			name = ChatUI;
+			packageProductDependencies = (
+			);
 			productName = ChatUI;
 			productReference = F79DB2052B16B8F200E53A75 /* ChatUI.app */;
 			productType = "com.apple.product-type.application";
@@ -320,7 +600,7 @@
 				};
 			};
 			buildConfigurationList = F79DB2002B16B8F200E53A75 /* Build configuration list for PBXProject "ChatUI" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -328,6 +608,8 @@
 				Base,
 			);
 			mainGroup = F79DB1FC2B16B8F200E53A75;
+			packageReferences = (
+			);
 			productRefGroup = F79DB2062B16B8F200E53A75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,8 +626,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79DB2102B16B8F300E53A75 /* Preview Assets.xcassets in Resources */,
-				F79DB20D2B16B8F300E53A75 /* Assets.xcassets in Resources */,
+				F721AA082B4F616A00E3DF4D /* Satoshi-Regular.otf in Resources */,
+				F721AA062B4F616500E3DF4D /* Satoshi-Light.otf in Resources */,
+				F721AA012B4F615000E3DF4D /* Satoshi-Bold.otf in Resources */,
+				F721AA072B4F616800E3DF4D /* Satoshi-BoldItalic.otf in Resources */,
+				F721AA042B4F615F00E3DF4D /* Satoshi-BlackItalic.otf in Resources */,
+				F721AA092B4F616D00E3DF4D /* Satoshi-Black.otf in Resources */,
+				F721AA002B4F614100E3DF4D /* Satoshi-Variable.ttf in Resources */,
+				F71C54032B696B9D00BF2B70 /* prompts.json in Resources */,
+				F721AA032B4F615D00E3DF4D /* Satoshi-MediumItalic.otf in Resources */,
+				F721AA022B4F615B00E3DF4D /* Satoshi-Medium.otf in Resources */,
+				F721A9FF2B4F613B00E3DF4D /* Satoshi-VariableItalic.ttf in Resources */,
+				F721AA052B4F616300E3DF4D /* Satoshi-LightItalic.otf in Resources */,
+				F721AA0A2B4F616F00E3DF4D /* Satoshi-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,27 +663,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71C53F22B64E9E600BF2B70 /* NewChatSection.swift in Sources */,
 				F79DB23C2B16C12A00E53A75 /* SearchView.swift in Sources */,
 				F79DB2482B16D33D00E53A75 /* SettingsUIView.swift in Sources */,
 				F79DB2442B16CFCD00E53A75 /* CallsUIHeader.swift in Sources */,
+				F71C53EE2B638B3400BF2B70 /* PromptsView.swift in Sources */,
 				F79DB23A2B16C0F700E53A75 /* ChatUIHeader.swift in Sources */,
 				F78FB9CE2B22001E00AEF056 /* ChatScreenFooter.swift in Sources */,
+				F73CCFA92B5A7A4600E6F7EB /* OnboardingFooter.swift in Sources */,
+				F73CCFAE2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift in Sources */,
+				F71C54122B6A5FEA00BF2B70 /* FeaturedPrompt.swift in Sources */,
+				F71C53E22B62D00900BF2B70 /* Explore.swift in Sources */,
+				F71C540B2B699D0C00BF2B70 /* PromptCategoryRow.swift in Sources */,
+				F71747E32BA1E7A300BDC6C6 /* SafariView.swift in Sources */,
+				F71C53FA2B66321000BF2B70 /* ChatMessageView.swift in Sources */,
 				F79DB20B2B16B8F200E53A75 /* ContentView.swift in Sources */,
+				F71C53D62B61686400BF2B70 /* ChatHistorySection.swift in Sources */,
 				F78FB9CC2B21FF3C00AEF056 /* MessageView.swift in Sources */,
+				F71C53FC2B667A1100BF2B70 /* PromptViewModel.swift in Sources */,
+				F71C53E42B62D2F600BF2B70 /* ExploreView.swift in Sources */,
+				F71C53DC2B616DD700BF2B70 /* ExploreItem.swift in Sources */,
+				F71C54182B6A782900BF2B70 /* PromptFilter.swift in Sources */,
+				F73CCFB02B5A7B5200E6F7EB /* BackgroundGradient.swift in Sources */,
+				F71C540D2B699E8E00BF2B70 /* PromptCategoryItem.swift in Sources */,
+				F71C54162B6A655700BF2B70 /* PageControl.swift in Sources */,
+				F71C53D12B61670200BF2B70 /* Main.swift in Sources */,
+				F71C53DE2B616FF600BF2B70 /* ChatHistoryItem.swift in Sources */,
+				F73CCFA72B5A78D300E6F7EB /* OnboardingHeader.swift in Sources */,
+				F71C54072B69949200BF2B70 /* FavoriteButton.swift in Sources */,
+				F71C54142B6A61C100BF2B70 /* PageView.swift in Sources */,
+				F71C53E82B62E18600BF2B70 /* HistoryView.swift in Sources */,
+				F71C54052B69785900BF2B70 /* PromptBGGradient.swift in Sources */,
+				F73CCFA52B5A781400E6F7EB /* FeaturedCard.swift in Sources */,
+				F71C54092B699A7500BF2B70 /* PromptCategoryHome.swift in Sources */,
 				F79DB24A2B16D61900E53A75 /* SettingsItem.swift in Sources */,
+				F71C53CD2B60F54700BF2B70 /* Chat.swift in Sources */,
+				F71C53F62B65671E00BF2B70 /* SectionNavigationArrow.swift in Sources */,
 				F7FAB1382B22B4F400D59335 /* ChatsViewModel.swift in Sources */,
+				F71C53CF2B60FA7200BF2B70 /* ChatFooter.swift in Sources */,
 				F7FAB1342B229F7E00D59335 /* PromptView.swift in Sources */,
+				F71747E12BA1E45400BDC6C6 /* APITokenSetup.swift in Sources */,
+				F71C53F82B662FCE00BF2B70 /* Message.swift in Sources */,
 				F78FB9D02B22010700AEF056 /* ChatScreenBody.swift in Sources */,
+				F71C53EA2B63800A00BF2B70 /* Prompt.swift in Sources */,
 				F79DB2382B16B96B00E53A75 /* ChatUIView.swift in Sources */,
 				F79DB2422B16CC7B00E53A75 /* CallsUIView.swift in Sources */,
 				F7FAB1362B22A38D00D59335 /* ConversationItem.swift in Sources */,
 				F79DB23E2B16C29B00E53A75 /* ChatOnline.swift in Sources */,
+				F73CCFAC2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift in Sources */,
+				F71C53E02B6183E000BF2B70 /* PromptLibraryItem.swift in Sources */,
+				F7304F092B94F22D002FE1C8 /* HistoryViewModel.swift in Sources */,
+				F71C53E62B62D5A500BF2B70 /* History.swift in Sources */,
+				F71C53DA2B61687B00BF2B70 /* PromptLibrarySection.swift in Sources */,
 				F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */,
+				F71C53D82B61686E00BF2B70 /* ExploreSection.swift in Sources */,
+				F721A97B2B4F5FA500E3DF4D /* Onboarding.swift in Sources */,
+				F721AA0D2B4F70F100E3DF4D /* Login.swift in Sources */,
 				F79DB2462B16D0D500E53A75 /* CallUsers.swift in Sources */,
 				F79DB24C2B16D79300E53A75 /* SettingsUIHeader.swift in Sources */,
+				F71C54102B6A514C00BF2B70 /* PageViewController.swift in Sources */,
 				F79DB2402B16C2F200E53A75 /* ChatUsers.swift in Sources */,
+				F77B36742B793E1E00821A17 /* AIAndHumanCoexistenceView.swift in Sources */,
+				F71C54002B68C27600BF2B70 /* PromptModelData.swift in Sources */,
+				F71C53D42B61683500BF2B70 /* MainHeader.swift in Sources */,
 				F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */,
 				F78FFE6A2B20BBA600E9FAFA /* ChatScreen.swift in Sources */,
+				F71C53F42B65592700BF2B70 /* ChatBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,8 +892,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatUI/Preview Content\"";
+				DEVELOPMENT_TEAM = N4M5PL4DJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,9 +908,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ChatUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -582,8 +926,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatUI/Preview Content\"";
+				DEVELOPMENT_TEAM = N4M5PL4DJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -596,9 +942,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ChatUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
