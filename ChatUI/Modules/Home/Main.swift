@@ -28,13 +28,13 @@ struct Main: View {
                         ChatHistorySection(promptVM: promptVM, historyVM: historyVM)
                     }
                 }
-                Spacer()
+//                Spacer()
 //                GridRow {
 //                    ExploreSection(promptVM: promptVM)
 //                }
-//                GridRow {
-//                    PromptLibrarySection(promptVM: promptVM)
-//                }
+                GridRow {
+                    PromptLibrarySection(promptVM: promptVM)
+                }
             }
             .frame(maxWidth:.infinity,maxHeight:.infinity)
             .background(Color(red: 0.16, green: 0.18, blue: 0.20))

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct ChatUIApp: App {
     // TODO: Consider injecting this from outside if you plan to use dependency injection.
-    let chatViewModel = ChatsViewModel()
+//    let chatViewModel = ChatsViewModel()
     let promotViewModel = PromptViewModel()
     let historyViewModel = HistoryViewModel()
     @State private var promptModelData = PromptModelData()

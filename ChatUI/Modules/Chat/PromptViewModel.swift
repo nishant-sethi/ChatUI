@@ -71,7 +71,7 @@ class PromptViewModel: ObservableObject {
         
         
         //set api url
-        let urlString = "https://cbe2-82-25-49-180.ngrok-free.app/ask-gpt4"
+        let urlString = "https://abae-165-225-196-145.ngrok-free.app/ask-gpt4"
         guard let url = URL(string: urlString) else {
             self.isFetching = false
             return
