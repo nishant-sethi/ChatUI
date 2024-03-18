@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/Variable/Satoshi-Variable.ttf</string>
+		<string>Fonts/Variable/Satoshi-VariableItalic.ttf</string>
+		<string>Fonts/OTF/Satoshi-Bold.otf</string>
+		<string>Fonts/OTF/Satoshi-Black.otf</string>
+		<string>Shared/Fonts/OTF/Satoshi-Regular.otf</string>
+		<string>Fonts/OTF/Satoshi-BoldItalic.otf</string>
+		<string>Fonts/OTF/Satoshi-LightItalic.otf</string>
+		<string>Fonts/OTF/Satoshi-Light.otf</string>
+		<string>Fonts/OTF/Satoshi-BlackItalic.otf</string>
+		<string>Fonts/OTF/Satoshi-MediumItalic.otf</string>
+		<string>Fonts/OTF/Satoshi-Medium.otf</string>
+	</array>
+</dict>
+</plist>
