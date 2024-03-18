@@ -66,6 +66,7 @@
 		F73CCFB02B5A7B5200E6F7EB /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */; };
 		F77B36742B793E1E00821A17 /* AIAndHumanCoexistenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */; };
 		F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79696DF2B25DBF8005BA8D0 /* Conversations.swift */; };
+		F79A10CE2BA8FBF6006C602B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DB20C2B16B8F300E53A75 /* Assets.xcassets */; };
 		F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */; };
 		F79DB21A2B16B8F300E53A75 /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2192B16B8F300E53A75 /* ChatUITests.swift */; };
 		F79DB2242B16B8F300E53A75 /* ChatUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2232B16B8F300E53A75 /* ChatUIUITests.swift */; };
@@ -525,6 +526,7 @@
 				F721AA062B4F616500E3DF4D /* Satoshi-Light.otf in Resources */,
 				F721AA012B4F615000E3DF4D /* Satoshi-Bold.otf in Resources */,
 				F721AA072B4F616800E3DF4D /* Satoshi-BoldItalic.otf in Resources */,
+				F79A10CE2BA8FBF6006C602B /* Assets.xcassets in Resources */,
 				F721AA042B4F615F00E3DF4D /* Satoshi-BlackItalic.otf in Resources */,
 				F721AA092B4F616D00E3DF4D /* Satoshi-Black.otf in Resources */,
 				F721AA002B4F614100E3DF4D /* Satoshi-Variable.ttf in Resources */,
