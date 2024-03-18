@@ -35,7 +35,7 @@ class HistoryViewModel: ObservableObject {
     }
     
     func getContextFromConversation(_ messages: [Message], _ historyId: UUID?) async {
-        let urlString = "https://abae-165-225-196-145.ngrok-free.app/get-context"
+        let urlString = "https://calm-coast-87343-200918e427ac.herokuapp.com/get-context"
         let messagesList = messages.map { $0.content }.joined(separator: ",")
         let requestBody: [String: Any] = [
             "user_messages": messagesList
