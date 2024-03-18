@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import OpenAISwift
 
 class PromptViewModel: ObservableObject {
     
@@ -31,7 +30,7 @@ class PromptViewModel: ObservableObject {
             return
         }
         /// set api url
-        let urlString = "https://cbe2-82-25-49-180.ngrok-free.app/set-api-key"
+        let urlString = "https://calm-coast-87343-200918e427ac.herokuapp.com/set-api-key"
         guard let url = URL(string: urlString) else {
             return
         }
@@ -71,7 +70,7 @@ class PromptViewModel: ObservableObject {
         
         
         //set api url
-        let urlString = "https://abae-165-225-196-145.ngrok-free.app/ask-gpt4"
+        let urlString = "https://calm-coast-87343-200918e427ac.herokuapp.com/ask-gpt4"
         guard let url = URL(string: urlString) else {
             self.isFetching = false
             return
