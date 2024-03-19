@@ -24,7 +24,7 @@ struct PromptCategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { prompt in
-                        NavigationLink(destination: Chat(promptVM: promptVM, historyVM: HistoryViewModel(), history: History.sampleData[0],title: prompt.act)) {
+                        NavigationLink(destination: Chat(history: History.sampleData[0],title: prompt.act)) {
                             PromptCategoryItem(prompt: prompt)
                         }
                         .navigationTitle("Prompt Library")

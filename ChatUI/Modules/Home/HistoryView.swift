@@ -13,7 +13,7 @@ struct HistoryView: View {
     var body: some View {
         NavigationStack {
             List(historyItems) { item in
-                NavigationLink(destination: Chat(promptVM: promptVM, historyVM: HistoryViewModel(),history: item)) {
+                NavigationLink(destination: Chat(history: item)) {
                     ChatHistoryItem(historyItem: item)
                 }
             }

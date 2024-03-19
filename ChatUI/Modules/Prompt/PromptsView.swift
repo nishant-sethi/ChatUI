@@ -30,7 +30,7 @@ struct PromptsView: View {
                             .foregroundStyle(.white)
                     }
                     ForEach(filteredPrompts){ item in
-                        NavigationLink(destination: Chat(promptVM: promptVM, historyVM: HistoryViewModel(), title: item.act)) {
+                        NavigationLink(destination: Chat(title: item.act)) {
                             PromptLibraryItem(item: item)
                         }
                     }

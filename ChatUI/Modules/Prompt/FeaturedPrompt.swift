@@ -10,7 +10,7 @@ import SwiftUI
 struct FeaturedPrompt: View {
     var prompt: Prompt
     var body: some View {
-        NavigationLink(destination: Chat(promptVM: PromptViewModel(), historyVM: HistoryViewModel(), history: History.sampleData[0], title: prompt.act)) {
+        NavigationLink(destination: Chat(history: History.sampleData[0], title: prompt.act)) {
             BackgroundGradient(from: prompt.from, to: prompt.to)
                 .overlay {
                     TextOverlay(prompt: prompt)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 class HistoryViewModel: ObservableObject {
     @Published var history: [History] = []
     
@@ -20,9 +21,7 @@ class HistoryViewModel: ObservableObject {
     //MARK: code not working properly. check the new chat and update chat flow again.
     func updateHistory(_ context:String, _ messages: [Message], _ historyId:UUID?) {
         if let index = history.firstIndex(where: {$0.id == historyId}) {
-            for message in messages {
-                history[index].messages.append(message)
-            }
+            history[index].messages.append(contentsOf: messages)
         } else {
             let newHistory = History(prompt: context, iconName: "", description: "", messages: messages)
             print("\(newHistory)")
@@ -35,40 +34,15 @@ class HistoryViewModel: ObservableObject {
     }
     
     func getContextFromConversation(_ messages: [Message], _ historyId: UUID?) async {
-        let urlString = "https://calm-coast-87343-200918e427ac.herokuapp.com/get-context"
         let messagesList = messages.map { $0.content }.joined(separator: ",")
-        let requestBody: [String: Any] = [
-            "user_messages": messagesList
-        ]
-        print("\(requestBody)")
-        guard let url = URL(string: urlString) else {
-            return
-        }
-        guard let jsonData = try? JSONSerialization.data(withJSONObject: requestBody) else {
-            return
-        }
+        let requestBody: [String: Any] = ["user_messages": messagesList]
         
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.httpBody = jsonData
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            print(data)
-            if let responseMessage = String(data: data, encoding: .utf8) {
-                print(responseMessage) // handle it to show on the ui screen
-                self.updateHistory(responseMessage, messages,historyId)
-            } else {
-                //                self.messages.append(Message(content: "No response received", isUser: false))
-                return
-            }
-        } catch {
-            print("POST request failed: \(error)")
-            //            self.messages.append(Message(content: "Something went wrong while fetching response, Please try again", isUser: false))
-            return
-            
-            // Handle the error appropriately
+        let result = await APIUtils.postRequest(urlString: APIUtils.APIConstants.getTitle, requestBody: requestBody)
+        switch result {
+            case .success(let context):
+                updateHistory(context, messages, historyId)
+            case .failure(let error):
+                print("POST request failed: \(error)")
         }
     }
 }

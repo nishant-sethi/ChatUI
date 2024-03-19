@@ -62,6 +62,7 @@
 		F73CCFB02B5A7B5200E6F7EB /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */; };
 		F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79696DF2B25DBF8005BA8D0 /* Conversations.swift */; };
 		F79A10CE2BA8FBF6006C602B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DB20C2B16B8F300E53A75 /* Assets.xcassets */; };
+		F79A10D02BAA188B006C602B /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A10CF2BAA188B006C602B /* APIHelpers.swift */; };
 		F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */; };
 		F79DB21A2B16B8F300E53A75 /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2192B16B8F300E53A75 /* ChatUITests.swift */; };
 		F79DB2242B16B8F300E53A75 /* ChatUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2232B16B8F300E53A75 /* ChatUIUITests.swift */; };
@@ -141,6 +142,7 @@
 		F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
 		F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
 		F79696DF2B25DBF8005BA8D0 /* Conversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversations.swift; sourceTree = "<group>"; };
+		F79A10CF2BAA188B006C602B /* APIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelpers.swift; sourceTree = "<group>"; };
 		F79DB2052B16B8F200E53A75 /* ChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIApp.swift; sourceTree = "<group>"; };
 		F79DB20C2B16B8F300E53A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */,
 				F71C54062B69949200BF2B70 /* FavoriteButton.swift */,
 				F71747E22BA1E7A300BDC6C6 /* SafariView.swift */,
+				F79A10CF2BAA188B006C602B /* APIHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				F73CCFA72B5A78D300E6F7EB /* OnboardingHeader.swift in Sources */,
 				F71C54072B69949200BF2B70 /* FavoriteButton.swift in Sources */,
 				F71C54142B6A61C100BF2B70 /* PageView.swift in Sources */,
+				F79A10D02BAA188B006C602B /* APIHelpers.swift in Sources */,
 				F71C53E82B62E18600BF2B70 /* HistoryView.swift in Sources */,
 				F71C54052B69785900BF2B70 /* PromptBGGradient.swift in Sources */,
 				F73CCFA52B5A781400E6F7EB /* FeaturedCard.swift in Sources */,

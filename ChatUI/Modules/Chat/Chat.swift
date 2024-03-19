@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Chat: View {
-    @ObservedObject var promptVM: PromptViewModel
-    @ObservedObject var historyVM: HistoryViewModel
+    @EnvironmentObject var promptVM: PromptViewModel
+    @EnvironmentObject var historyVM: HistoryViewModel
     
     var history: History?
     var title: String?
@@ -17,22 +17,27 @@ struct Chat: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            ChatBody(title:title,prompt: prompt, promptVM: promptVM, history: history)
-            
-            ChatFooter(promptModel: promptVM, prompt: prompt)
+            ChatBody(title:title,prompt: prompt,history: history)
+            ChatFooter(prompt: prompt)
             Spacer()
         }
-//        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
-//        .background(Color(red: 0.16, green: 0.18, blue: 0.20))
         .onAppear {
-            if history?.prompt == nil {
-                promptVM.resetMessages()
-            }
+            checkHistoryAndResetMessagesIfNeeded()
         }
         .onDisappear {
-            if history?.prompt == nil && promptVM.messages.count > 0{
-                getContext()
-            }
+            saveContextIfNeeded()
+        }
+    }
+    
+    private func checkHistoryAndResetMessagesIfNeeded() {
+        if history?.prompt == nil {
+            promptVM.resetMessages()
+        }
+    }
+    
+    private func saveContextIfNeeded() {
+        if history?.prompt == nil && !promptVM.messages.isEmpty {
+            getContext()
         }
     }
     
@@ -45,5 +50,7 @@ struct Chat: View {
 }
 
 #Preview {
-    Chat(promptVM: PromptViewModel(), historyVM: HistoryViewModel(), history: History.sampleData[0])
+    Chat(history: History.sampleData[0])
+        .environmentObject(PromptViewModel())
+        .environmentObject(HistoryViewModel())
 }

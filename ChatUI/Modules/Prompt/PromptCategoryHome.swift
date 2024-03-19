@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct PromptCategoryHome: View {
+    
     @Environment(PromptModelData.self) var promptModelData
-    @ObservedObject var promptVM: PromptViewModel
+    @EnvironmentObject var promptVM: PromptViewModel
     @State private var showFilters = false
     @State var toggleMap: [String: Bool] = [:]
     
@@ -62,6 +63,7 @@ struct PromptCategoryHome: View {
 }
 
 #Preview {
-    PromptCategoryHome(promptVM: PromptViewModel())
+    PromptCategoryHome()
         .environment(PromptModelData())
+        .environmentObject(PromptViewModel())
 }
