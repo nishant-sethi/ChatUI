@@ -13,9 +13,9 @@ struct PromptCategoryHome: View {
     @EnvironmentObject var promptVM: PromptViewModel
     @State private var showFilters = false
     @State var toggleMap: [String: Bool] = [:]
+    @State var selectAll: Bool = false
     
     var body: some View {
-        
         ScrollView {
             Grid {
                 PageView(pages: promptModelData.features.map(FeaturedPrompt.init))
@@ -52,7 +52,7 @@ struct PromptCategoryHome: View {
     
     private var filterView: some View {
         NavigationStack {
-            PromptFilter(selectAll: false, toggleMap: $toggleMap)
+            PromptFilter(selectAll: $selectAll, toggleMap: $toggleMap)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
                         Button("Cancel") {

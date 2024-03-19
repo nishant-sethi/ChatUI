@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PromptFilter: View {
     @EnvironmentObject var promptModelData: PromptModelData
-    @State var selectAll: Bool
+    @Binding var selectAll: Bool
     @Binding var toggleMap: [String: Bool]
     
     var body: some View {
         VStack(alignment: .leading) {
             Toggle("Select All", isOn: $selectAll.onChange(toggleAll))
             
-            ForEach(sortedCategories, id: \.self) { category in
+            ForEach(promptModelData.allCategories, id: \.self) { category in
                 Toggle(category, isOn: bindingForCategory(category))
                     .disabled(selectAll)
             }
@@ -30,14 +30,14 @@ struct PromptFilter: View {
     
     private func bindingForCategory(_ category: String) -> Binding<Bool> {
         Binding(
-            get: { toggleMap[category, default: selectAll] },
+            get: { toggleMap[category, default: false] },
             set: { toggleMap[category] = $0 }
         )
     }
     
     private func toggleAll(newValue: Bool) {
         selectAll = newValue
-        for category in sortedCategories {
+        for category in promptModelData.allCategories {
             toggleMap[category] = newValue
         }
     }
@@ -55,6 +55,6 @@ extension Binding {
     }
 }
 #Preview {
-    PromptFilter(selectAll: false, toggleMap: .constant([:]))
+    PromptFilter(selectAll: .constant(false), toggleMap: .constant([:]))
         .environmentObject(PromptModelData())
 }

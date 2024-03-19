@@ -14,7 +14,9 @@ class PromptModelData: ObservableObject {
     var features: [Prompt] {
         prompts.filter { $0.isFeatured }
     }
-
+    var allCategories: [String] {
+        Set(prompts.map { $0.category }).sorted()
+    }
     init() {
         loadPrompts()
         updateCategories()
