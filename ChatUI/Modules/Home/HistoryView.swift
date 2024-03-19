@@ -13,10 +13,9 @@ struct HistoryView: View {
     var body: some View {
         NavigationStack {
             List(historyItems) { item in
-                NavigationLink(destination: Chat(promptVM: promptVM, historyVM: HistoryViewModel())) {
+                NavigationLink(destination: Chat(promptVM: promptVM, historyVM: HistoryViewModel(),history: item)) {
                     ChatHistoryItem(historyItem: item)
                 }
-                Text(item.prompt)
             }
             .listStyle(.inset)
             .navigationTitle("Chat History")

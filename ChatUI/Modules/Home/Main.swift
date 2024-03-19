@@ -24,7 +24,7 @@ struct Main: View {
                             Label("Prompt Library", systemImage: "books.vertical.circle")
                         }.tag(Tab.library)
                         HistoryView(promptVM: promptVM, historyItems: historyVM.history).tabItem {
-                            Label("History", systemImage: "globe")
+                            Label("History", systemImage: "note.text")
                         }.tag(Tab.history)
                         ExploreView(exploreItems: Explore.sampleData).tabItem {
                             Label("Explore", systemImage: "globe")
