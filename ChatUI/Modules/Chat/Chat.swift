@@ -18,10 +18,12 @@ struct Chat: View {
     var body: some View {
         VStack(alignment: .leading) {
             ChatBody(title:title,prompt: prompt, promptVM: promptVM, history: history)
+            
             ChatFooter(promptModel: promptVM, prompt: prompt)
+            Spacer()
         }
-        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
-        .background(Color(red: 0.16, green: 0.18, blue: 0.20))
+//        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
+//        .background(Color(red: 0.16, green: 0.18, blue: 0.20))
         .onAppear {
             if history?.prompt == nil {
                 promptVM.resetMessages()

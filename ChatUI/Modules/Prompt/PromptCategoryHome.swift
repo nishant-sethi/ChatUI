@@ -14,7 +14,7 @@ struct PromptCategoryHome: View {
     @State var toggleMap: [String: Bool] = [:]
     
     var body: some View {
-        
+
         ScrollView {
             Grid {
                 PageView(pages: promptModelData.features.map { FeaturedPrompt(prompt: $0) })
@@ -25,6 +25,7 @@ struct PromptCategoryHome: View {
                         PromptCategoryRow(categoryName: key, items: promptModelData.categories[key]!,promptVM: promptVM)
                     }
                     Divider()
+                        .foregroundStyle(.white)
                 }
             }
             
@@ -56,6 +57,7 @@ struct PromptCategoryHome: View {
                     }
             }
         }
+        
     }
 }
 

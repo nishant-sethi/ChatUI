@@ -12,7 +12,7 @@ struct ChatBody: View {
     var prompt: String?
     @ObservedObject var promptVM: PromptViewModel
     var history: History?
-
+    
     
     var body: some View {
         VStack(alignment: .leading){
@@ -20,14 +20,14 @@ struct ChatBody: View {
                 Spacer()
                 Text(history?.prompt ?? "New Chat" )
                     .font(.custom("Satoshi", size: 14).weight(.bold))
-                .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.76))
+//                    .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.76))
                 Spacer()
             }
             if promptVM.messages.isEmpty {
                 Spacer()
-                Text("Welcome! When typing a prompt in Mindmate, remember to:\n\nKeep your sentences concise and clear.\nAvoid ambiguity or vagueness in your language.\nUse appropriate and respectful language.\nRefrain from sharing personal or confidential information.\nUnderstand that the model's knowledge is based on data up until September 2021.\n\nFollowing these guidelines ensures better interactions ✨")
+                Text("Welcome! When typing a prompt , remember to:\n\nKeep your sentences concise and clear.\nAvoid ambiguity or vagueness in your language.\nUse appropriate and respectful language.\nRefrain from sharing personal or confidential information.\nUnderstand that the model's knowledge is not always up to date.\n\nFollowing these guidelines ensures better interactions ✨")
                     .font(.custom("Satoshi", size: 14).weight(.bold))
-                  .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.76))
+//                    .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.76))
                 Spacer()
             } else {
                 ScrollViewReader { scrollView in
@@ -66,5 +66,5 @@ struct ChatBody: View {
 
 #Preview {
     ChatBody(promptVM: PromptViewModel(), history: History.sampleData[0])
-        .background(Color(red: 0.16, green: 0.18, blue: 0.20).ignoresSafeArea(.all))
+        .background(Color(red: 0.16, green: 0.18, blue: 0.20))
 }
