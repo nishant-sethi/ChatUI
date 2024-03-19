@@ -8,39 +8,41 @@
 import SwiftUI
 
 struct PromptFilter: View {
-    @Environment(PromptModelData.self) var promptModelData;
+    @EnvironmentObject var promptModelData: PromptModelData
     @State var selectAll: Bool
     @Binding var toggleMap: [String: Bool]
     
     var body: some View {
         VStack(alignment: .leading) {
-            Toggle(isOn: $selectAll) {
-                Text("Select All")
-            }
-            ForEach(promptModelData.categoriesForFilter.keys.sorted(), id: \.self) { category in
-                Toggle(isOn: bindingForCategory(category), label: {
-                    Text(category)
-                })
-                .disabled(selectAll)
+            Toggle("Select All", isOn: $selectAll.onChange(toggleAll))
+            
+            ForEach(sortedCategories, id: \.self) { category in
+                Toggle(category, isOn: bindingForCategory(category))
+                    .disabled(selectAll)
             }
         }
         .padding()
     }
     
+    private var sortedCategories: [String] {
+        promptModelData.categories.keys.sorted()
+    }
+    
     private func bindingForCategory(_ category: String) -> Binding<Bool> {
         Binding(
-            get: { self.toggleMap[category, default: false] },
-            set: { self.toggleMap[category] = $0 }
+            get: { toggleMap[category, default: selectAll] },
+            set: { toggleMap[category] = $0 }
         )
     }
+    
     private func toggleAll(newValue: Bool) {
-        for category in promptModelData.categories.keys {
-            toggleMap[category] = !newValue
+        selectAll = newValue
+        for category in sortedCategories {
+            toggleMap[category] = newValue
         }
     }
 }
 
-// Helper extension to react to changes in a Binding
 extension Binding {
     func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
         Binding(
@@ -52,8 +54,7 @@ extension Binding {
         )
     }
 }
-
 #Preview {
     PromptFilter(selectAll: false, toggleMap: .constant([:]))
-        .environment(PromptModelData())
+        .environmentObject(PromptModelData())
 }

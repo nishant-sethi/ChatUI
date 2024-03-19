@@ -11,6 +11,7 @@ import SwiftUI
 struct ChatUIApp: App {
     @StateObject private var promptViewModel = PromptViewModel()
     @StateObject private var historyViewModel = HistoryViewModel()
+    @StateObject private var promptModelData = PromptModelData()
     
     @AppStorage("apiToken") private var apiToken: String = ""
     
@@ -26,7 +27,7 @@ struct ChatUIApp: App {
             APITokenSetup(promptModel: promptViewModel)
         } else {
             Main()
-                .environment(PromptModelData())
+                .environmentObject(promptModelData)
                 .environmentObject(promptViewModel)
                 .environmentObject(historyViewModel)
                 .onAppear {

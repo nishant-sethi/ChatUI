@@ -6,60 +6,50 @@
 //
 
 import Foundation
-//import SwiftUI
 
-@Observable
-class PromptModelData {
-    var prompts: [Prompt] = load("prompts.json")
-    var categories: [String: [Prompt]] = [:]
+class PromptModelData: ObservableObject {
+    @Published var prompts: [Prompt] = []
+    @Published var categories: [String: [Prompt]] = [:]
+
     var features: [Prompt] {
         prompts.filter { $0.isFeatured }
     }
-    var categoriesForFilter: [String: [Prompt]] = [:]
+
     init() {
+        loadPrompts()
         updateCategories()
-        self.categoriesForFilter = self.categories
     }
-    // Call this function to update categories, with a default parameter to include all categories
+
+    private func loadPrompts() {
+        prompts = load("prompts.json")
+    }
+
     func updateCategories(filteredCategories: [String]? = nil) {
         if let filteredCategories = filteredCategories {
+            // Filter prompts whose category is in the filteredCategories array
             let filteredPrompts = prompts.filter { prompt in
-                filteredCategories.contains(prompt.Category)
+                filteredCategories.contains(prompt.category)
             }
-            self.categories = Dictionary(
-                grouping: filteredPrompts,
-                by: { $0.Category }
-            )
+            // Group the filtered prompts by category
+            self.categories = Dictionary(grouping: filteredPrompts, by: { $0.category })
         } else {
-            // If no filter is provided, include all categories
-            self.categories = Dictionary(
-                grouping: prompts,
-                by: { $0.Category }
-            )
+            // Group all prompts by category if no filter is provided
+            self.categories = Dictionary(grouping: prompts, by: { $0.category })
         }
     }
+
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
-    let data: Data
-    
-    
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-    else {
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
         fatalError("Couldn't find \(filename) in main bundle.")
     }
-    
+
     do {
-        data = try Data(contentsOf: file)
-    } catch {
-        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-    }
-    
-    
-    do {
+        let data = try Data(contentsOf: file)
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
     } catch {
-        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+        fatalError("Couldn't load or parse \(filename): \(error)")
     }
 }

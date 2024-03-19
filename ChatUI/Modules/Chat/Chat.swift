@@ -13,11 +13,12 @@ struct Chat: View {
     
     var history: History?
     var title: String?
+    var description: String?
     var prompt: String?
     
     var body: some View {
         VStack(alignment: .leading) {
-            ChatBody(title:title,prompt: prompt,history: history)
+            ChatBody(title:title,description: description, prompt: prompt,history: history)
             ChatFooter(prompt: prompt)
             Spacer()
         }

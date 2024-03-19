@@ -10,41 +10,39 @@ import SwiftUI
 struct PromptCategoryRow: View {
     var categoryName: String
     var items: [Prompt]
-    @ObservedObject var promptVM: PromptViewModel
+    @EnvironmentObject var promptVM: PromptViewModel
+    
     var body: some View {
         VStack(alignment: .leading) {
-            HStack{
-                NavigationLink(destination: PromptsView(promptVM: promptVM, categoryItems: items)) {
-                    Text(categoryName)
-                        .font(.custom("Satoshi", size: 22).weight(.medium))
-                        .foregroundColor(.white)
-                }
+            NavigationLink(destination: PromptsView(categoryItems: items)) {
+                Text(categoryName)
+                    .font(.custom("Satoshi", size: 22).weight(.medium))
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
             }
-            .padding([.leading,.trailing])
+            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { prompt in
-                        NavigationLink(destination: Chat(history: History.sampleData[0],title: prompt.act)) {
+                        NavigationLink(destination: Chat(title: prompt.act, description: prompt.description)) {
                             PromptCategoryItem(prompt: prompt)
                         }
-                        .navigationTitle("Prompt Library")
+                        .padding(.leading, items.first == prompt ? 0 : 10) // Add padding except for the first item
+                        .padding(.top)
                     }
-                    .padding([.leading,.top])
                 }
-                
             }
         }
-        .padding([.top,.bottom])
-        
+        .padding(.vertical)
     }
 }
 
 #Preview {
     let prompts = PromptModelData().prompts
     return PromptCategoryRow(
-        categoryName: prompts[0].Category,
-        items: Array(prompts.prefix(3)),
-        promptVM: PromptViewModel()
+        categoryName: prompts[0].category,
+        items: Array(prompts.prefix(3))
     )
     .background(Color(red: 0.16, green: 0.18, blue: 0.20))
+    .environmentObject(PromptViewModel())
 }

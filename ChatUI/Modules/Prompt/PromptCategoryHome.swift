@@ -9,30 +9,31 @@ import SwiftUI
 
 struct PromptCategoryHome: View {
     
-    @Environment(PromptModelData.self) var promptModelData
+    @EnvironmentObject var promptModelData: PromptModelData
     @EnvironmentObject var promptVM: PromptViewModel
     @State private var showFilters = false
     @State var toggleMap: [String: Bool] = [:]
     
     var body: some View {
-
+        
         ScrollView {
             Grid {
-                PageView(pages: promptModelData.features.map { FeaturedPrompt(prompt: $0) })
+                PageView(pages: promptModelData.features.map(FeaturedPrompt.init))
                     .listRowInsets(EdgeInsets())
                 
-                ForEach(promptModelData.categories.keys.sorted(), id: \.self) { key in
+                ForEach(sortedCategories, id: \.self) { key in
                     GridRow {
-                        PromptCategoryRow(categoryName: key, items: promptModelData.categories[key]!,promptVM: promptVM)
+                        if let items = promptModelData.categories[key] {
+                            PromptCategoryRow(categoryName: key, items: items)
+                        }
                     }
                     Divider()
                         .foregroundStyle(.white)
                 }
             }
-            
             .background(Color(red: 0.16, green: 0.18, blue: 0.20))
-            
         }
+        .navigationTitle("Prompt Library")
         .toolbar {
             Button {
                 showFilters.toggle()
@@ -41,29 +42,41 @@ struct PromptCategoryHome: View {
             }
         }
         .sheet(isPresented: $showFilters) {
-            NavigationStack {
-                PromptFilter(selectAll: false, toggleMap: $toggleMap)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancel") {
-                                showFilters = false
-                            }
-                        }
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                promptModelData.updateCategories(filteredCategories: Dictionary(uniqueKeysWithValues: toggleMap.filter {$0.value == true}).keys.sorted())
-                                showFilters = false
-                            }
-                        }
-                    }
-            }
+            filterView
         }
         
+    }
+    private var sortedCategories: [String] {
+        promptModelData.categories.keys.sorted()
+    }
+    
+    private var filterView: some View {
+        NavigationStack {
+            PromptFilter(selectAll: false, toggleMap: $toggleMap)
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Cancel") {
+                            showFilters.toggle()
+                        }
+                    }
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("Done") {
+                            updateFilteredCategories()
+                            showFilters.toggle()
+                        }
+                    }
+                }
+        }
+    }
+    
+    private func updateFilteredCategories() {
+        let filteredKeys = toggleMap.filter { $0.value }.keys.sorted()
+        promptModelData.updateCategories(filteredCategories: filteredKeys)
     }
 }
 
 #Preview {
     PromptCategoryHome()
-        .environment(PromptModelData())
+        .environmentObject(PromptModelData())
         .environmentObject(PromptViewModel())
 }

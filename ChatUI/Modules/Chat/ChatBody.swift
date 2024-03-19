@@ -11,6 +11,7 @@ struct ChatBody: View {
     @EnvironmentObject var promptVM: PromptViewModel
     
     var title: String?
+    var description: String?
     var prompt: String?
     var history: History?
     
@@ -31,7 +32,7 @@ struct ChatBody: View {
     private var chatTitle: some View {
         HStack {
             Spacer()
-            Text(history?.prompt ?? "New Chat")
+            Text(history?.prompt ?? title ?? "New Chat")
                 .font(.custom("Satoshi", size: 14).weight(.bold))
             Spacer()
         }
@@ -40,7 +41,7 @@ struct ChatBody: View {
     private var welcomeMessage: some View {
         return Group {
             Spacer()
-            Text("Welcome! When typing a prompt, remember to:\n\nKeep your sentences concise and clear.\nAvoid ambiguity or vagueness in your language.\nUse appropriate and respectful language.\nRefrain from sharing personal or confidential information.\nUnderstand that the model's knowledge is not always up to date.\n\nFollowing these guidelines ensures better interactions ✨")
+            Text(description ?? "Welcome! When typing a prompt, remember to:\n\nKeep your sentences concise and clear.\nAvoid ambiguity or vagueness in your language.\nUse appropriate and respectful language.\nRefrain from sharing personal or confidential information.\nUnderstand that the model's knowledge is not always up to date.\n\nFollowing these guidelines ensures better interactions ✨")
                 .font(.custom("Satoshi", size: 14).weight(.bold))
             Spacer()
         }

@@ -8,25 +8,25 @@
 import Foundation
 import SwiftUI
 
-struct Prompt: Hashable,Codable, Identifiable {
-    
-    var act: String;
-    var Category: String;
-    var Subcategory: String;
-    var Description: String?;
-    var prompt: String;
-    var id: Int;
-    
-    var from: Color {
-        PromptBGColor.from(Category.trimmingCharacters(in: .whitespaces))
-    }
-    var to: Color {
-        PromptBGColor.to(Category.trimmingCharacters(in: .whitespaces))
-    }
+struct Prompt: Hashable, Codable, Identifiable {
+    var act: String
+    var category: String
+    var subcategory: String
+    var description: String?
+    var prompt: String
+    var id: Int
     
     var isFavorite: Bool
     var isFeatured: Bool
+    
+    var from: Color {
+        PromptBGColor.from(category.trimmingCharacters(in: .whitespaces))
+    }
+    var to: Color {
+        PromptBGColor.to(category.trimmingCharacters(in: .whitespaces))
+    }
 }
+
 
 extension Prompt {
     

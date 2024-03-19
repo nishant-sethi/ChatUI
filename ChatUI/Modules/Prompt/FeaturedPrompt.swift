@@ -38,10 +38,10 @@ struct TextOverlay: View {
                     .font(.title)
                     .bold()
                     .multilineTextAlignment(.leading)
-                Text(prompt.Description ?? "")
+                Text(prompt.description ?? "")
                     .font(.subheadline)
                     .multilineTextAlignment(.leading)
-                Text(prompt.Category)
+                Text(prompt.category)
                     .font(.caption)
                     .multilineTextAlignment(.leading)
             }

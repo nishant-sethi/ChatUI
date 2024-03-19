@@ -12,49 +12,55 @@ struct Main: View {
     @EnvironmentObject var historyVM: HistoryViewModel
     
     var body: some View {
-        NavigationStack {
-            TabView {
+        TabView {
+            NavigationStack {
                 Chat()
-                    .tabItem {
-                        Label("Home", systemImage: "brain")
-                    }
-                    .tag(Tab.chat)
-                
-                PromptCategoryHome()
-                    .tabItem {
-                        Label("Prompt Library", systemImage: "books.vertical.circle")
-                    }
-                    .tag(Tab.library)
-                
-                HistoryView(promptVM: promptVM, historyItems: historyVM.history)
-                    .tabItem {
-                        Label("History", systemImage: "note.text")
-                    }
-                    .tag(Tab.history)
-                
-                ExploreView(exploreItems: Explore.sampleData)
-                    .tabItem {
-                        Label("Explore", systemImage: "globe")
-                    }
-                    .tag(Tab.explore)
             }
-            .background(Color(red: 0.16, green: 0.18, blue: 0.20))
+            .tabItem {
+                Label("Home", systemImage: "brain")
+            }
+            .tag(Tab.chat)
+            
+            NavigationStack {
+                PromptCategoryHome()
+            }
+            .tabItem {
+                Label("Prompt Library", systemImage: "books.vertical.circle")
+            }
+            .tag(Tab.library)
+            
+            NavigationStack {
+                HistoryView(promptVM: promptVM, historyItems: historyVM.history)
+            }
+            .tabItem {
+                Label("History", systemImage: "note.text")
+            }
+            .tag(Tab.history)
+            
+            NavigationStack {
+                ExploreView(exploreItems: Explore.sampleData)
+            }
+            .tabItem {
+                Label("Explore", systemImage: "globe")
+            }
+            .tag(Tab.explore)
         }
+        .background(Color(red: 0.16, green: 0.18, blue: 0.20))
+        
     }
     
-    enum Tab {
-        case chat
-        case library
-        case history
-        case explore
-    }
+    
 }
-
+enum Tab {
+    case chat
+    case library
+    case history
+    case explore
+}
 
 
 #Preview {
     Main()
-        .environment(PromptModelData())
         .environmentObject(PromptViewModel())
         .environmentObject(HistoryViewModel())
 }

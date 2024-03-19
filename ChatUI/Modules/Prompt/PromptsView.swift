@@ -9,9 +9,10 @@ import SwiftUI
 
 struct PromptsView: View {
     
-    @Environment(PromptModelData.self) var promptModelData
-    @ObservedObject var promptVM: PromptViewModel
+    @EnvironmentObject var promptModelData: PromptModelData
+    @EnvironmentObject var promptVM: PromptViewModel
     @State private var showFavoritesOnly = false
+    
     var categoryItems: [Prompt]
     var filteredPrompts: [Prompt] {
         categoryItems.filter { prompt in
@@ -19,7 +20,6 @@ struct PromptsView: View {
         }
     }
     
-//    let promptItems: [Prompt]
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -29,14 +29,16 @@ struct PromptsView: View {
                             .font(.custom("Satoshi", size: 16).weight(.bold))
                             .foregroundStyle(.white)
                     }
-                    ForEach(filteredPrompts){ item in
+                    .padding()
+                    
+                    ForEach(filteredPrompts) { item in
                         NavigationLink(destination: Chat(title: item.act)) {
                             PromptLibraryItem(item: item)
                         }
+                        .padding(.vertical)
                     }
                 }
-                .padding([.leading,.trailing,.bottom])
-                .animation(.default, value: filteredPrompts)
+                .padding(.horizontal)
                 .navigationTitle("Prompts")
             }
             .background(Color(red: 0.16, green: 0.18, blue: 0.20))
@@ -45,7 +47,8 @@ struct PromptsView: View {
 }
 
 #Preview {
-    PromptsView(promptVM: PromptViewModel(),categoryItems: PromptModelData().prompts)
-        .environment(PromptModelData())
+    PromptsView(categoryItems: PromptModelData().prompts)
+        .environmentObject(PromptModelData())
+        .environmentObject(PromptViewModel())
     
 }
