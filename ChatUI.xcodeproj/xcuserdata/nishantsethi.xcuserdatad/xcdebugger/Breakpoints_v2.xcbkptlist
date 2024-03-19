@@ -18,6 +18,50 @@
             endingLineNumber = "30"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "ED4C0402-E86E-494C-ADA8-B773FBEE5A38 - debefea96e68db80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;ChatUI.APITokenSetup, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in ChatUI.ChatUIApp.body.getter : some"
+                  moduleName = "ChatUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nishantsethi/MyWork/xcode%20playgrounds/ChatUI/ChatUI/ChatUIApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+               <Location
+                  uuid = "ED4C0402-E86E-494C-ADA8-B773FBEE5A38 - 148f305722944a76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;ChatUI.APITokenSetup, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in ChatUI.ChatUIApp.body.getter : some"
+                  moduleName = "ChatUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nishantsethi/MyWork/xcode%20playgrounds/ChatUI/ChatUI/ChatUIApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+               <Location
+                  uuid = "ED4C0402-E86E-494C-ADA8-B773FBEE5A38 - 66e961011db1e786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;ChatUI.APITokenSetup, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in ChatUI.ChatUIApp.body.getter : some"
+                  moduleName = "ChatUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nishantsethi/MyWork/xcode%20playgrounds/ChatUI/ChatUI/ChatUIApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,6 +92,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "379109CB-7E9D-4844-B9D2-6EE59BB28763"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatUI/Modules/Home/Main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
