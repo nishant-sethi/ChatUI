@@ -25,6 +25,11 @@ struct ChatUIApp: App {
                 //            OnboardingView()
                 Main(promptVM: promotViewModel, historyVM: historyViewModel)
                     .environment(promptModelData)
+                    .onAppear {
+                        Task {
+                            await promotViewModel.setAPIKey()
+                        }
+                    }
                 // .onAppear { ... } // Handle any app launch configurations.
                 // .onDisappear { ... } // Handle any clean-up if necessary.
             }

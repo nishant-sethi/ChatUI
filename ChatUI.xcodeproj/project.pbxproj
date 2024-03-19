@@ -13,9 +13,6 @@
 		F71C53CF2B60FA7200BF2B70 /* ChatFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53CE2B60FA7200BF2B70 /* ChatFooter.swift */; };
 		F71C53D12B61670200BF2B70 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D02B61670200BF2B70 /* Main.swift */; };
 		F71C53D42B61683500BF2B70 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D32B61683500BF2B70 /* MainHeader.swift */; };
-		F71C53D62B61686400BF2B70 /* ChatHistorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */; };
-		F71C53D82B61686E00BF2B70 /* ExploreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D72B61686E00BF2B70 /* ExploreSection.swift */; };
-		F71C53DA2B61687B00BF2B70 /* PromptLibrarySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */; };
 		F71C53DC2B616DD700BF2B70 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */; };
 		F71C53DE2B616FF600BF2B70 /* ChatHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */; };
 		F71C53E02B6183E000BF2B70 /* PromptLibraryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53DF2B6183E000BF2B70 /* PromptLibraryItem.swift */; };
@@ -25,7 +22,6 @@
 		F71C53E82B62E18600BF2B70 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E72B62E18600BF2B70 /* HistoryView.swift */; };
 		F71C53EA2B63800A00BF2B70 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53E92B63800A00BF2B70 /* Prompt.swift */; };
 		F71C53EE2B638B3400BF2B70 /* PromptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53ED2B638B3400BF2B70 /* PromptsView.swift */; };
-		F71C53F22B64E9E600BF2B70 /* NewChatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */; };
 		F71C53F42B65592700BF2B70 /* ChatBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F32B65592700BF2B70 /* ChatBody.swift */; };
 		F71C53F62B65671E00BF2B70 /* SectionNavigationArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */; };
 		F71C53F82B662FCE00BF2B70 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71C53F72B662FCE00BF2B70 /* Message.swift */; };
@@ -64,7 +60,6 @@
 		F73CCFAC2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAB2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift */; };
 		F73CCFAE2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */; };
 		F73CCFB02B5A7B5200E6F7EB /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */; };
-		F77B36742B793E1E00821A17 /* AIAndHumanCoexistenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */; };
 		F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79696DF2B25DBF8005BA8D0 /* Conversations.swift */; };
 		F79A10CE2BA8FBF6006C602B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79DB20C2B16B8F300E53A75 /* Assets.xcassets */; };
 		F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */; };
@@ -97,9 +92,6 @@
 		F71C53CE2B60FA7200BF2B70 /* ChatFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFooter.swift; sourceTree = "<group>"; };
 		F71C53D02B61670200BF2B70 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F71C53D32B61683500BF2B70 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
-		F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistorySection.swift; sourceTree = "<group>"; };
-		F71C53D72B61686E00BF2B70 /* ExploreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSection.swift; sourceTree = "<group>"; };
-		F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibrarySection.swift; sourceTree = "<group>"; };
 		F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryItem.swift; sourceTree = "<group>"; };
 		F71C53DF2B6183E000BF2B70 /* PromptLibraryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibraryItem.swift; sourceTree = "<group>"; };
@@ -109,7 +101,6 @@
 		F71C53E72B62E18600BF2B70 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		F71C53E92B63800A00BF2B70 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 		F71C53ED2B638B3400BF2B70 /* PromptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsView.swift; sourceTree = "<group>"; };
-		F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatSection.swift; sourceTree = "<group>"; };
 		F71C53F32B65592700BF2B70 /* ChatBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBody.swift; sourceTree = "<group>"; };
 		F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionNavigationArrow.swift; sourceTree = "<group>"; };
 		F71C53F72B662FCE00BF2B70 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -149,7 +140,6 @@
 		F73CCFAB2B5A7AB800E6F7EB /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		F73CCFAD2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
 		F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
-		F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAndHumanCoexistenceView.swift; sourceTree = "<group>"; };
 		F79696DF2B25DBF8005BA8D0 /* Conversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversations.swift; sourceTree = "<group>"; };
 		F79DB2052B16B8F200E53A75 /* ChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79DB2082B16B8F200E53A75 /* ChatUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIApp.swift; sourceTree = "<group>"; };
@@ -204,11 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F71C53D02B61670200BF2B70 /* Main.swift */,
-				F71C53F12B64E9E600BF2B70 /* NewChatSection.swift */,
 				F71C53D32B61683500BF2B70 /* MainHeader.swift */,
-				F71C53D52B61686400BF2B70 /* ChatHistorySection.swift */,
-				F71C53D72B61686E00BF2B70 /* ExploreSection.swift */,
-				F71C53D92B61687B00BF2B70 /* PromptLibrarySection.swift */,
 				F71C53DB2B616DD700BF2B70 /* ExploreItem.swift */,
 				F71C53E32B62D2F600BF2B70 /* ExploreView.swift */,
 				F71C53DD2B616FF600BF2B70 /* ChatHistoryItem.swift */,
@@ -338,7 +324,6 @@
 				F73CCFAF2B5A7B5200E6F7EB /* BackgroundGradient.swift */,
 				F71C53F52B65671E00BF2B70 /* SectionNavigationArrow.swift */,
 				F71C54062B69949200BF2B70 /* FavoriteButton.swift */,
-				F77B36732B793E1E00821A17 /* AIAndHumanCoexistenceView.swift */,
 				F71747E22BA1E7A300BDC6C6 /* SafariView.swift */,
 			);
 			path = Helpers;
@@ -560,7 +545,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71C53F22B64E9E600BF2B70 /* NewChatSection.swift in Sources */,
 				F71C53EE2B638B3400BF2B70 /* PromptsView.swift in Sources */,
 				F73CCFA92B5A7A4600E6F7EB /* OnboardingFooter.swift in Sources */,
 				F73CCFAE2B5A7B1500E6F7EB /* SecondaryButtonStyle.swift in Sources */,
@@ -569,7 +553,6 @@
 				F71C540B2B699D0C00BF2B70 /* PromptCategoryRow.swift in Sources */,
 				F71747E32BA1E7A300BDC6C6 /* SafariView.swift in Sources */,
 				F71C53FA2B66321000BF2B70 /* ChatMessageView.swift in Sources */,
-				F71C53D62B61686400BF2B70 /* ChatHistorySection.swift in Sources */,
 				F71C53FC2B667A1100BF2B70 /* PromptViewModel.swift in Sources */,
 				F71C53E42B62D2F600BF2B70 /* ExploreView.swift in Sources */,
 				F71C53DC2B616DD700BF2B70 /* ExploreItem.swift in Sources */,
@@ -596,13 +579,10 @@
 				F71C53E02B6183E000BF2B70 /* PromptLibraryItem.swift in Sources */,
 				F7304F092B94F22D002FE1C8 /* HistoryViewModel.swift in Sources */,
 				F71C53E62B62D5A500BF2B70 /* History.swift in Sources */,
-				F71C53DA2B61687B00BF2B70 /* PromptLibrarySection.swift in Sources */,
 				F79DB2092B16B8F200E53A75 /* ChatUIApp.swift in Sources */,
-				F71C53D82B61686E00BF2B70 /* ExploreSection.swift in Sources */,
 				F721A97B2B4F5FA500E3DF4D /* Onboarding.swift in Sources */,
 				F721AA0D2B4F70F100E3DF4D /* Login.swift in Sources */,
 				F71C54102B6A514C00BF2B70 /* PageViewController.swift in Sources */,
-				F77B36742B793E1E00821A17 /* AIAndHumanCoexistenceView.swift in Sources */,
 				F71C54002B68C27600BF2B70 /* PromptModelData.swift in Sources */,
 				F71C53D42B61683500BF2B70 /* MainHeader.swift in Sources */,
 				F79696E02B25DBF8005BA8D0 /* Conversations.swift in Sources */,

@@ -28,7 +28,6 @@ struct APITokenSetup: View {
                 TextField("API Token", text: $token)
                     .focused($textFocused)
                     .padding()
-                
                     .overlay(
                         RoundedRectangle(cornerRadius: 14)
                             .stroke(Color.secondary, lineWidth: 2))
@@ -42,6 +41,7 @@ struct APITokenSetup: View {
                 .padding(.horizontal)
                 Button(action: setAPIToken, label: {
                     Text("Continue")
+                        .disabled(token.isEmpty)
                 }).buttonStyle(.bordered)
             }
             .padding()

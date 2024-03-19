@@ -22,8 +22,9 @@ struct ChatFooter: View {
                 TextField("Ask Anything...", text: $message)
                        .font(.custom("Satoshi", size: 16))
                        .padding(10)
-                       .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.76))  // Apply foreground color to TextField
-                       .textFieldStyle(RoundedBorderTextFieldStyle())
+                       .overlay(
+                           RoundedRectangle(cornerRadius: 14)
+                               .stroke(Color.secondary, lineWidth: 2))
             .accessibilityLabel("Message input")
                 Spacer()
                 Button(action: sendMessage) {

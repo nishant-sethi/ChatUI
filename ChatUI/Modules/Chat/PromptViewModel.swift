@@ -11,7 +11,7 @@ class PromptViewModel: ObservableObject {
     
     @Published var isFetching: Bool = false;
     @Published var messages: [Message] = []
-    var token: String = ""
+    var token: String = UserDefaults.standard.string(forKey: "apiToken") ?? ""
     private var prompt: String = ""
     
     
@@ -24,7 +24,7 @@ class PromptViewModel: ObservableObject {
         self.messages.append(Message(content: userMessage, isUser: true))
     }
     func setAPIKey() async  {
-        print(self.token)
+        print(self.token )
         guard !self.token.isEmpty else {
             print("API Key Required")
             return
