@@ -41,7 +41,7 @@ struct ChatMessageView: View {
                 .foregroundColor(Color(red: 0.96, green: 0.96, blue: 0.96))
         }
         .padding(EdgeInsets(top: 17, leading: 20, bottom: 17, trailing: 20))
-        .background(Color(red: 0.68, green: 0.68, blue: 0.68).opacity(0.60))
+        .background(.blue)
         .cornerRadius(24)
         .overlay(
             RoundedRectangle(cornerRadius: 24)
@@ -54,10 +54,10 @@ struct ChatMessageView: View {
         return HStack {
             Text(message.content)
                 .font(.custom("Satoshi", size: 12))
-                .foregroundColor(Color(red: 0.09, green: 0.09, blue: 0.09))
+                .foregroundColor(.black)
         }
         .padding(EdgeInsets(top: 12, leading: 16, bottom: 16, trailing: 16))
-        .background(Color(red: 1, green: 1, blue: 1).opacity(0.95))
+        .background(.gray)
         .cornerRadius(24);
     }
 }
@@ -68,5 +68,5 @@ struct ChatMessageView: View {
         Spacer()
     }
     .padding()
-    .background(Color(red: 0.16, green: 0.18, blue: 0.20).ignoresSafeArea(.all))
+//    .background(Color(red: 0.16, green: 0.18, blue: 0.20).ignoresSafeArea(.all))
 }

@@ -20,8 +20,8 @@ class PromptViewModel: ObservableObject {
     private var userMessages: [String] = [];
     private var gptResponses: [String] = []
     
-    func pushMessage(userMessage: String) {
-        self.messages.append(Message(content: userMessage, isUser: true))
+    func pushMessage(userMessage: String, isUser: Bool) {
+        self.messages.append(Message(content: userMessage, isUser: isUser))
     }
     func setAPIKey() async  {
         print(self.token )
@@ -62,10 +62,10 @@ class PromptViewModel: ObservableObject {
     private func handleNetworkResult(_ result: Result<String, Error>) {
         switch result {
             case .success(let message):
-                pushMessage(userMessage: message)
+                pushMessage(userMessage: message, isUser: false)
             case .failure(let error):
                 print("Request failed: \(error)")
-                pushMessage(userMessage: "An error occurred: \(error.localizedDescription)")
+                pushMessage(userMessage: "An error occurred: \(error.localizedDescription)",isUser: false)
         }
     }
 }

@@ -46,7 +46,7 @@ struct ChatFooter: View {
     private func sendMessage() {
         guard !message.isEmpty else { return }
         
-        promptModel.pushMessage(userMessage: message)
+        promptModel.pushMessage(userMessage: message, isUser: true)
         Task {
             await promptModel.postMessageToGPT(prompt: prompt ?? "")
         }
