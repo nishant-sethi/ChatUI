@@ -30,7 +30,7 @@ struct Main: View {
             .tag(Tab.library)
             
             NavigationStack {
-                HistoryView(promptVM: promptVM, historyItems: historyVM.history)
+                HistoryView()
             }
             .tabItem {
                 Label("History", systemImage: "note.text")
@@ -48,7 +48,6 @@ struct Main: View {
         .background(Color(red: 0.16, green: 0.18, blue: 0.20))
         
     }
-    
     
 }
 enum Tab {

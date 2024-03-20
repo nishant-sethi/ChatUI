@@ -19,16 +19,19 @@ struct ChatBody: View {
     var body: some View {
         VStack(alignment: .leading){
             chatTitle
+            Spacer()
             if promptVM.messages.isEmpty {
                 welcomeMessage
             } else {
-                messagesList
+                messagesList(messages: messageSource)
             }
         }
         .padding()
         
     }
-    
+    private var messageSource: [Message] {
+           history?.messages ?? promptVM.messages
+       }
     private var chatTitle: some View {
         HStack {
             Spacer()
@@ -40,7 +43,6 @@ struct ChatBody: View {
     
     private var welcomeMessage: some View {
         return Group {
-            Spacer()
             Text(description ?? "Welcome! When typing a prompt, remember to:\n\nKeep your sentences concise and clear.\nAvoid ambiguity or vagueness in your language.\nUse appropriate and respectful language.\nRefrain from sharing personal or confidential information.\nUnderstand that the model's knowledge is not always up to date.\n\nFollowing these guidelines ensures better interactions ✨")
                 .font(.custom("Satoshi", size: 14).weight(.bold))
             Spacer()
@@ -48,11 +50,11 @@ struct ChatBody: View {
         
     }
     
-    private var messagesList: some View {
+    private func messagesList(messages: [Message]) -> some View {
         ScrollViewReader { scrollView in
             ScrollView {
                 LazyVStack {
-                    ForEach(promptVM.messages) { message in
+                    ForEach(messages) { message in
                         ChatMessageView(message: message)
                     }
                     if promptVM.isFetching {
@@ -60,7 +62,7 @@ struct ChatBody: View {
                             .accessibilityLabel("Fetching new messages")
                     }
                 }
-                .onChange(of: promptVM.messages.count) { _ in
+                .onChange(of: promptVM.messages.count) {
                     scrollToBottom(scrollView: scrollView)
                 }
             }

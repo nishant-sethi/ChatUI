@@ -13,7 +13,7 @@ class HistoryViewModel: ObservableObject {
     
     func createNewHistory(_ context: String, _ messages: [Message]) {
         let newHistory = History(prompt: context, iconName: "", description: "", messages: messages)
-        print("\(newHistory)")
+//        print("\(newHistory)")
         self.history.append(newHistory)
         print("History created.")
     }
@@ -23,10 +23,9 @@ class HistoryViewModel: ObservableObject {
         if let index = history.firstIndex(where: {$0.id == historyId}) {
             history[index].messages.append(contentsOf: messages)
         } else {
-            let newHistory = History(prompt: context, iconName: "", description: "", messages: messages)
-            print("\(newHistory)")
-            self.history.append(newHistory)
-            print("History created.")
+            print(self.history.count)
+            createNewHistory(context, messages)
+            print(self.history.count)
         }
     }
     func fetchHistory() -> [History]{

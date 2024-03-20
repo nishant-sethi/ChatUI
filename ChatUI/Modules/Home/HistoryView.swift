@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @ObservedObject var promptVM: PromptViewModel
-    let historyItems: [History]
+//    @ObservedObject var promptVM: PromptViewModel
+    @EnvironmentObject var historyVM: HistoryViewModel
+    
     var body: some View {
         NavigationStack {
-            List(historyItems) { item in
+            List(historyVM.history) { item in
                 NavigationLink(destination: Chat(history: item)) {
                     ChatHistoryItem(historyItem: item)
                 }
@@ -24,5 +25,6 @@ struct HistoryView: View {
 }
 
 #Preview {
-    HistoryView(promptVM: PromptViewModel(), historyItems: History.sampleData)
+    HistoryView()
+        .environmentObject(HistoryViewModel())
 }
